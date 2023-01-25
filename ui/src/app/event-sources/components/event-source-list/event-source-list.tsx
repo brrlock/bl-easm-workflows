@@ -24,7 +24,7 @@ import {EventsPanel} from '../../../workflows/components/events-panel';
 import {EventSourceCreator} from '../event-source-creator';
 import {EventSourceLogsViewer} from '../event-source-log-viewer';
 
-const learnMore = <a href='https://argoproj.github.io/argo-events/concepts/event_source/'>Learn more</a>;
+// const learnMore = <a href='https://argoproj.github.io/argo-events/concepts/event_source/'>Learn more</a>;
 
 export const EventSourceList = ({match, location, history}: RouteComponentProps<any>) => {
     // boiler-plate
@@ -113,7 +113,7 @@ export const EventSourceList = ({match, location, history}: RouteComponentProps<
                         create events for Git pushes), or MinIO (to create events for file drops). Each event source publishes messages to the event bus so that sensors can listen
                         for them.
                     </p>
-                    <p>{learnMore}.</p>
+                    {/* <p>{learnMore}.</p> */}
                 </ZeroState>
             )}
             {eventSources && eventSources.length > 0 && (

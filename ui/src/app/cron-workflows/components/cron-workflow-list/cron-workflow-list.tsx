@@ -24,7 +24,7 @@ import {PrettySchedule} from '../pretty-schedule';
 
 require('./cron-workflow-list.scss');
 
-const learnMore = <a href='https://argoproj.github.io/argo-workflows/cron-workflows/'>Learn more</a>;
+// const learnMore = <a href='https://argoproj.github.io/argo-workflows/cron-workflows/'>Learn more</a>;
 
 export const CronWorkflowList = ({match, location, history}: RouteComponentProps<any>) => {
     // boiler-plate
@@ -121,7 +121,8 @@ export const CronWorkflowList = ({match, location, history}: RouteComponentProps
                         <ZeroState title='No cron workflows'>
                             <p>You can create new cron workflows here or using the CLI.</p>
                             <p>
-                                <ExampleManifests />. {learnMore}.
+                                <ExampleManifests />. 
+                                {/* {learnMore}. */}
                             </p>
                         </ZeroState>
                     ) : (
@@ -163,7 +164,8 @@ export const CronWorkflowList = ({match, location, history}: RouteComponentProps
                             </div>
                             <Footnote>
                                 <InfoIcon /> Cron workflows are workflows that run on a preset schedule. Next scheduled run assumes workflow-controller is in UTC.{' '}
-                                <ExampleManifests />. {learnMore}.
+                                <ExampleManifests />. 
+                                {/* {learnMore}. */}
                             </Footnote>
                         </>
                     )}

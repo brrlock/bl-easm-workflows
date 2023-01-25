@@ -27,7 +27,7 @@ const introductionText = (
         from a remote system.
     </>
 );
-const learnMore = <a href={'https://argoproj.github.io/argo-workflows/events/'}>Learn more</a>;
+// const learnMore = <a href={'https://argoproj.github.io/argo-workflows/events/'}>Learn more</a>;
 
 export const WorkflowEventBindings = ({match, location, history}: RouteComponentProps<any>) => {
     // boiler-plate
@@ -114,9 +114,9 @@ export const WorkflowEventBindings = ({match, location, history}: RouteComponent
                         </code>
                     </p>
                     <p>
-                        You'll probably find it easiest to experiment and test using the <a href={uiUrl('apidocs')}>graphical interface to the API </a> - look for "EventService.
+                        You'll probably find it easiest to experiment and test using the graphical interface to the API - look for "EventService.
                     </p>
-                    <p>{learnMore}</p>
+                    {/* <p>{learnMore}</p> */}
                 </ZeroState>
             ) : (
                 <>
@@ -138,7 +138,8 @@ export const WorkflowEventBindings = ({match, location, history}: RouteComponent
                         }}
                     />
                     <Footnote>
-                        <InfoIcon /> {introductionText} {learnMore}.
+                        <InfoIcon /> {introductionText} 
+                        {/* {learnMore}. */}
                     </Footnote>
                     <SlidingPanel isShown={!!selectedWorkflowEventBinding} onClose={() => setSelectedWorkflowEventBinding(null)}>
                         {selected && <ResourceEditor value={selected} />}

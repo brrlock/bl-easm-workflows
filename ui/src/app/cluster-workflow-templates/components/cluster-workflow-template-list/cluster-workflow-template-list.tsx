@@ -52,13 +52,14 @@ export const ClusterWorkflowTemplateList = ({history, location}: RouteComponentP
         if (!templates) {
             return <Loading />;
         }
-        const learnMore = <a href='https://argoproj.github.io/argo-workflows/cluster-workflow-templates/'>Learn more</a>;
+        // const learnMore = <a href='https://argoproj.github.io/argo-workflows/cluster-workflow-templates/'>Learn more</a>;
         if (templates.length === 0) {
             return (
                 <ZeroState title='No cluster workflow templates'>
                     <p>You can create new templates here or using the CLI.</p>
                     <p>
-                        <ExampleManifests />. {learnMore}.
+                        <ExampleManifests />. 
+                        {/* {learnMore}. */}
                     </p>
                 </ZeroState>
             );
@@ -84,7 +85,8 @@ export const ClusterWorkflowTemplateList = ({history, location}: RouteComponentP
                     ))}
                 </div>
                 <Footnote>
-                    <InfoIcon /> Cluster scoped Workflow templates are reusable templates you can create new workflows from. <ExampleManifests />. {learnMore}.
+                    <InfoIcon /> Cluster scoped Workflow templates are reusable templates you can create new workflows from. <ExampleManifests />. 
+                    {/* {learnMore}. */}
                 </Footnote>
             </>
         );

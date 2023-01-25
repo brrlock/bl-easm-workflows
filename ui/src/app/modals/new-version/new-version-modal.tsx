@@ -37,11 +37,11 @@ export const NewVersionModal = ({version, dismiss}: {version: string; dismiss: (
                     in the middle of the workflow
                 </li>
             </ul>
-            <p>
+            {/* <p>
                 <a href='https://blog.argoproj.io/what-to-expect-in-argo-workflows-v3-4-711702ad88e9?utm_source=argo-ui' target='_blank'>
                     Learn more
                 </a>
-            </p>
+            </p> */}
             <h5>v3.3</h5>
             <ul className='new-version-modal-bullets'>
                 <li>
@@ -54,11 +54,11 @@ export const NewVersionModal = ({version, dismiss}: {version: string; dismiss: (
                 <li>Connect with the workflow using lifecycle hooks.</li>
                 <li>Pause steps in your workflow with Debug pause.</li>
             </ul>
-            <p>
+            {/* <p>
                 <a href='https://blog.argoproj.io/whats-new-in-argo-workflows-v3-3-dd051d2f1c7?utm_source=argo-ui' target='_blank'>
                     Learn more
                 </a>
-            </p>
+            </p> */}
             <h5>v3.2</h5>
             <ul className='new-version-modal-bullets'>
                 <li>
@@ -83,11 +83,11 @@ export const NewVersionModal = ({version, dismiss}: {version: string; dismiss: (
                     .
                 </li>
             </ul>
-            <p>
+            {/* <p>
                 <a href='https://blog.argoproj.io/argo-workflows-v3-2-af780a99b362?utm_source=argo-ui' target='_blank'>
                     Learn more
                 </a>
-            </p>
+            </p> */}
             <h5>v3.1</h5>
             <ul className='new-version-modal-bullets'>
                 <li>
@@ -112,11 +112,11 @@ export const NewVersionModal = ({version, dismiss}: {version: string; dismiss: (
                     .
                 </li>
             </ul>
-            <p>
+            {/* <p>
                 <a href='https://blog.argoproj.io/argo-workflows-v3-1-is-coming-1fb1c1091324?utm_source=argo-ui' target='_blank'>
                     Learn more
                 </a>
-            </p>
+            </p> */}
             <p className='new-version-modal-footer'>
                 <SurveyButton />
             </p>
