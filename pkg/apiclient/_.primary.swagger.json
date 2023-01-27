@@ -12,7 +12,7 @@
   ],
   "host": "localhost:2746",
   "info": {
-    "title": "Argo Workflows API",
+    "title": "Breachlock Workflows API",
     "description": "Argo Workflows is an open source container-native workflow engine for orchestrating parallel jobs on Kubernetes. For more information, please see https://argoproj.github.io/argo-workflows/",
     "version": "VERSION"
   },

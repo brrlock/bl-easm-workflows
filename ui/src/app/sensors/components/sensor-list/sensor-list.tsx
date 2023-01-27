@@ -23,7 +23,7 @@ import {SensorCreator} from '../sensor-creator';
 import {SensorSidePanel} from '../sensor-side-panel';
 import {Utils as EventsUtils} from '../utils';
 
-const learnMore = <a href='https://argoproj.github.io/argo-events/concepts/sensor/'>Learn more</a>;
+// const learnMore = <a href='https://argoproj.github.io/argo-events/concepts/sensor/'>Learn more</a>;
 
 export const SensorList = ({match, location, history}: RouteComponentProps<any>) => {
     // boiler-plate
@@ -109,7 +109,7 @@ export const SensorList = ({match, location, history}: RouteComponentProps<any>)
                         topic. Typical triggers are start a workflow, creating a Kubernetes resource, or sending a message to another queue or topic. Each sensor listens for events
                         from the event bus, checks to see if they're the right one, and then triggers some actions.
                     </p>
-                    <p>{learnMore}.</p>
+                    {/* <p>{learnMore}.</p> */}
                 </ZeroState>
             )}
             {sensors && sensors.length > 0 && (

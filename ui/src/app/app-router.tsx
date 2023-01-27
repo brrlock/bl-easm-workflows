@@ -11,14 +11,14 @@ import clusterWorkflowTemplates from './cluster-workflow-templates';
 import cronWorkflows from './cron-workflows';
 import eventflow from './event-flow';
 import eventSources from './event-sources';
-import help from './help';
+// import help from './help';
 import login from './login';
 import {ModalSwitch} from './modals/modal-switch';
 import plugins from './plugins';
 import reports from './reports';
 import sensors from './sensors';
 import {uiUrl} from './shared/base';
-import {ChatButton} from './shared/components/chat-button';
+// import {ChatButton} from './shared/components/chat-button';
 import ErrorBoundary from './shared/components/error-boundary';
 import {services} from './shared/services';
 import {Utils} from './shared/utils';
@@ -38,7 +38,7 @@ const cronWorkflowsUrl = uiUrl('cron-workflows');
 const archivedWorkflowsUrl = uiUrl('archived-workflows');
 const eventSourceUrl = uiUrl('event-sources');
 const pluginsUrl = uiUrl('plugins');
-const helpUrl = uiUrl('help');
+// const helpUrl = uiUrl('help');
 const apiDocsUrl = uiUrl('apidocs');
 const userInfoUrl = uiUrl('userinfo');
 const loginUrl = uiUrl('login');
@@ -155,11 +155,11 @@ export const AppRouter = ({popupManager, history, notificationsManager}: {popupM
                                 path: pluginsUrl,
                                 iconClassName: 'fa fa-puzzle-piece'
                             },
-                            {
-                                title: 'Help',
-                                path: helpUrl,
-                                iconClassName: 'fa fa-question-circle'
-                            }
+                            // {
+                            //     title: 'Help',
+                            //     path: helpUrl,
+                            //     iconClassName: 'fa fa-question-circle'
+                            // }
                         ]}
                         version={() => <>{version ? version.version : 'unknown'}</>}>
                         <Notifications notifications={notificationsManager.notifications} />
@@ -179,7 +179,7 @@ export const AppRouter = ({popupManager, history, notificationsManager}: {popupM
                                 <Route path={archivedWorkflowsUrl} component={archivedWorkflows.component} />
                                 <Route path={reportsUrl} component={reports.component} />
                                 <Route path={pluginsUrl} component={plugins.component} />
-                                <Route exact={true} strict={true} path={helpUrl} component={help.component} />
+                                {/* <Route exact={true} strict={true} path={helpUrl} component={help.component} /> */}
                                 <Route exact={true} strict={true} path={apiDocsUrl} component={apidocs.component} />
                                 <Route exact={true} strict={true} path={userInfoUrl} component={userinfo.component} />
                                 <Route exact={true} strict={true} path={loginUrl} component={login.component} />
@@ -187,7 +187,7 @@ export const AppRouter = ({popupManager, history, notificationsManager}: {popupM
                                 {namespace && <Redirect to={workflowsUrl + '/' + namespace} />}
                             </Switch>
                         </ErrorBoundary>
-                        <ChatButton />
+                        {/* <ChatButton /> */}
                         {version && modals && <ModalSwitch version={version.version} modals={modals} />}
                     </Layout>
                 </Switch>

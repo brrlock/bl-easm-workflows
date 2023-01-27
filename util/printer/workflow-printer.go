@@ -109,7 +109,7 @@ func printCostOptimizationNudges(wfList []wfv1.Workflow, out io.Writer) {
 			_, _ = fmt.Fprintf(out, "%d completed ", completed)
 		}
 		_, _ = fmt.Fprintln(out, "workflows. Reducing the total number of workflows will reduce your costs.")
-		_, _ = fmt.Fprintln(out, "Learn more at https://argoproj.github.io/argo-workflows/cost-optimisation/")
+		// _, _ = fmt.Fprintln(out, "Learn more at https://argoproj.github.io/argo-workflows/cost-optimisation/")
 	}
 }
 

@@ -33,9 +33,9 @@ export const PluginList = ({match, history}: RouteComponentProps<any>) => {
                 <p>To list plugins:</p>
                 <pre>kubectl get cm -l workflows.argoproj.io/configmap-type=ExecutorPlugin</pre>
                 <br />
-                <p>
+                {/* <p>
                     <a href='https://argoproj.github.io/argo-workflows/plugins/'>Learn more</a>.
-                </p>
+                </p> */}
             </ZeroState>
         </Page>
     );

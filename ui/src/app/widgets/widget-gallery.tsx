@@ -4,9 +4,9 @@ import {uiUrl} from '../shared/base';
 export const WidgetGallery = ({namespace, name, label}: {namespace: string; name?: string; label?: string}) => (
     <div className='white-box'>
         <h3>Widgets</h3>
-        <p>
+        {/* <p>
             These widgets can be embedded inside other applications. <a href='https://argoproj.github.io/argo-workflows/widgets'>Learn more</a>
-        </p>
+        </p> */}
         {[
             {
                 title: 'Status Badge',

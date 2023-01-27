@@ -249,12 +249,12 @@ export class ArchivedWorkflowList extends BasePage<RouteComponentProps<any>, Sta
         if (!this.state.workflows) {
             return <Loading />;
         }
-        const learnMore = <a href='https://argoproj.github.io/argo-workflows/workflow-archive/'>Learn more</a>;
+        // const learnMore = <a href='https://argoproj.github.io/argo-workflows/workflow-archive/'>Learn more</a>;
         if (this.state.workflows.length === 0) {
             return (
                 <ZeroState title='No archived workflows'>
                     <p>To add entries to the archive you must enable archiving in configuration. Records are created in the archive on workflow completion.</p>
-                    <p>{learnMore}.</p>
+                    {/* <p>{learnMore}.</p> */}
                 </ZeroState>
             );
         }
@@ -304,7 +304,8 @@ export class ArchivedWorkflowList extends BasePage<RouteComponentProps<any>, Sta
                     numRecords={(this.state.workflows || []).length}
                 />
                 <p>
-                    <i className='fa fa-info-circle' /> Records are created in the archive when a workflow completes. {learnMore}.
+                    <i className='fa fa-info-circle' /> Records are created in the archive when a workflow completes.
+                     {/* {learnMore}. */}
                 </p>
             </>
         );

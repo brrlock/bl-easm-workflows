@@ -25,7 +25,7 @@ import {WorkflowTemplateFilters} from '../workflow-template-filters/workflow-tem
 
 require('./workflow-template-list.scss');
 
-const learnMore = <a href='https://argoproj.github.io/argo-workflows/workflow-templates/'>Learn more</a>;
+// const learnMore = <a href='https://argoproj.github.io/argo-workflows/workflow-templates/'>Learn more</a>;
 
 export const WorkflowTemplateList = ({match, location, history}: RouteComponentProps<any>) => {
     // boiler-plate
@@ -122,7 +122,8 @@ export const WorkflowTemplateList = ({match, location, history}: RouteComponentP
                         <ZeroState title='No workflow templates'>
                             <p>You can create new templates here or using the CLI.</p>
                             <p>
-                                <ExampleManifests />. {learnMore}.
+                                <ExampleManifests />. 
+                                {/* {learnMore}. */}
                             </p>
                         </ZeroState>
                     ) : (
@@ -151,7 +152,8 @@ export const WorkflowTemplateList = ({match, location, history}: RouteComponentP
                                 ))}
                             </div>
                             <Footnote>
-                                <InfoIcon /> Workflow templates are reusable templates you can create new workflows from. <ExampleManifests />. {learnMore}.
+                                <InfoIcon /> Workflow templates are reusable templates you can create new workflows from. <ExampleManifests />. 
+                                {/* {learnMore}. */}
                             </Footnote>
                             <PaginationPanel onChange={setPagination} pagination={pagination} numRecords={null} />
                         </>
